@@ -9,6 +9,6 @@ package com.web.demo.entity;
  *
  * @author w94nj
  */
-public class User {
+public class Customer {
     
 }
