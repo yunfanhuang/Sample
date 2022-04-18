@@ -1,24 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.web.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-/**
- *
- * @author w94nj
- */
+import javax.persistence.OneToMany;
 
 @Entity
-public class Classify implements Serializable{
+public class Classify implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -26,13 +20,16 @@ public class Classify implements Serializable{
     
     @Column
     private String name;
+        
+    @OneToMany(cascade=CascadeType.PERSIST, mappedBy="classify")
+    @JsonIgnoreProperties("classify")
+    private Set<Customer> customers;
 
     public Classify() {
     }
 
-    public Classify(Long id, String name) {
-        this.id = id;
-        this.name = name;
+    public Classify(String name) {
+        this.name = name;        
     }
     
     public Long getId() {
@@ -51,9 +48,19 @@ public class Classify implements Serializable{
         this.name = name;
     }
 
+    public Set<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(Set<Customer> customers) {
+        this.customers = customers;
+    }
+
     @Override
     public String toString() {
-        return "Classify{" + "id=" + id + ", name=" + name + '}';
+        return "Classify{" + "id=" + id + ", name=" + name + ", customers=" + customers + '}';
     }
+    
+    
     
 }
