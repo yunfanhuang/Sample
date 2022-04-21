@@ -38,6 +38,9 @@ public class Employee implements Serializable {
     @Column
     private String phone;
     
+    @Column
+    private Classify classify;
+    
     @Temporal(TemporalType.DATE)
     private Date date;
 
@@ -92,6 +95,14 @@ public class Employee implements Serializable {
         this.phone = phone;
     }
 
+    public Classify getClassify() {
+        return classify;
+    }
+
+    public void setClassify(Classify classify) {
+        this.classify = classify;
+    }
+    
     public Date getDate() {
         return date;
     }
@@ -110,9 +121,7 @@ public class Employee implements Serializable {
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + id + ", username=" + username + ", password=" + password + ", name=" + name + ", phone=" + phone + ", date=" + date + ", state=" + state + '}';
+        return "Employee{" + "id=" + id + ", username=" + username + ", password=" + password + ", name=" + name + ", phone=" + phone + ", classify=" + classify + ", date=" + date + ", state=" + state + '}';
     }
-
     
-
 }

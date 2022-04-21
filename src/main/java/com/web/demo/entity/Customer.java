@@ -30,21 +30,24 @@ public class Customer implements Serializable{
     private Long id;
     
     @Column
+    private String title;
+    
+    @Column
     private String name;
     
     @Column
     private String phone;
     
     @Column
-    private String address;
-    
-    @Column
-    private String remark;
+    private String address;   
 
     @ManyToOne(cascade=CascadeType.PERSIST)
     @JoinColumn(name = "classify_id", referencedColumnName = "id")
     @JsonIgnoreProperties("customers")
-    private Classify classify;            
+    private Classify classify;  
+    
+    @Column
+    private boolean state;
 
     public Customer() {
     }
@@ -87,15 +90,7 @@ public class Customer implements Serializable{
     public void setAddress(String address) {
         this.address = address;
     }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }   
-    
+        
     public Classify getClassify() {
         return classify;
     }
@@ -103,5 +98,21 @@ public class Customer implements Serializable{
     public void setClassify(Classify classify) {
         this.classify = classify;
     }    
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
     
 }
