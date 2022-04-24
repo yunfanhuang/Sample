@@ -5,13 +5,17 @@
  */
 package com.web.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -31,15 +35,13 @@ public class Employee implements Serializable {
 
     @Column
     private String password;
-    
+
     @Column
     private String name;
-    
+
     @Column
     private String phone;
-    
-    @Column
-    private Classify classify;
+
     
     @Temporal(TemporalType.DATE)
     private Date date;
@@ -50,9 +52,13 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public Employee(String username, String password) {
+    public Employee(String username, String password, String name, String phone, boolean state) {
         this.username = username;
         this.password = password;
+        this.name = name;
+        this.phone = phone;
+        
+        this.state = state;
     }
 
     public Long getId() {
@@ -95,14 +101,8 @@ public class Employee implements Serializable {
         this.phone = phone;
     }
 
-    public Classify getClassify() {
-        return classify;
-    }
-
-    public void setClassify(Classify classify) {
-        this.classify = classify;
-    }
     
+
     public Date getDate() {
         return date;
     }
@@ -118,10 +118,5 @@ public class Employee implements Serializable {
     public void setState(boolean state) {
         this.state = state;
     }
-
-    @Override
-    public String toString() {
-        return "Employee{" + "id=" + id + ", username=" + username + ", password=" + password + ", name=" + name + ", phone=" + phone + ", classify=" + classify + ", date=" + date + ", state=" + state + '}';
-    }
-    
+        
 }

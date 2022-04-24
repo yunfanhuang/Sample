@@ -19,12 +19,8 @@ public class Classify implements Serializable {
     private Long id;
     
     @Column
-    private String name;
-        
-    @OneToMany(cascade=CascadeType.PERSIST, mappedBy="classify")
-    @JsonIgnoreProperties("classify")
-    private Set<Customer> customers;
-
+    private String name;  
+    
     public Classify() {
     }
 
@@ -48,19 +44,9 @@ public class Classify implements Serializable {
         this.name = name;
     }
 
-    public Set<Customer> getCustomers() {
-        return customers;
-    }
-
-    public void setCustomers(Set<Customer> customers) {
-        this.customers = customers;
-    }
-
     @Override
     public String toString() {
-        return "Classify{" + "id=" + id + ", name=" + name + ", customers=" + customers + '}';
+        return "Classify{" + "id=" + id + ", name=" + name + '}';
     }
-    
-    
     
 }
