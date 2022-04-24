@@ -9,6 +9,6 @@ package com.web.demo.controller;
  *
  * @author w94nj
  */
-public class DemoController {
+public class ProductController {
     
 }
