@@ -1,0 +1,19 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page pageEncoding="UTF-8" %>
+<script type="text/javascript">
+    function chart1() {
+        var data = google.visualization.arrayToDataTable([
+            ['商品名稱', '目前存量'],
+            <c:forEach var="i" items="${ inventories2 }">
+                ['${ i.name }', ${ i.qty==null?0:i.qty }],
+            </c:forEach>
+        ]);
+        var options = {
+            title: '庫存量表'
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('chart1'));
+        chart.draw(data, options);
+    }
+</script>
+<div id="chart1" style="width: 900px; height: 500px;"></div>

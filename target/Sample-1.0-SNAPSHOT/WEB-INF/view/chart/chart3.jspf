@@ -1,0 +1,19 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page pageEncoding="UTF-8" %>
+<script type="text/javascript">
+    function chart3() {
+        var data = google.visualization.arrayToDataTable([
+            ['商品名稱', '進貨成本'],
+            <c:forEach var="i" items="${ inventories2 }">
+                ['${ i.name }', ${ i.puCost==null?0:i.puCost }],
+            </c:forEach>
+        ]);
+        var options = {
+            title: '庫存進貨成本'
+        };
+        var chart = new google.visualization.LineChart(document.getElementById('chart3'));
+        chart.draw(data, options);
+    }
+</script>
+<div id="chart3" style="width: 900px; height: 500px;"></div>
