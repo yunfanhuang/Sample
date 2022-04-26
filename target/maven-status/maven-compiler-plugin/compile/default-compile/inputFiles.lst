@@ -4,8 +4,12 @@ C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\enti
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\controller\DemoController.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\Purchase.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\Sales.java
+C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\repository\PurchaseRepository.java
+C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\JPAUtil.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\controller\ChartController.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\Employee.java
+C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\repository\ProductRepository.java
+C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\repository\SalesRepository.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\Test.java
-C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\JPAUtil.java
+C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\repository\EmployeeRepository.java
 C:\Users\w94nj\Documents\NetBeansProjects\Sample\src\main\java\com\web\demo\entity\Classify.java
