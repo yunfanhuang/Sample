@@ -43,7 +43,7 @@
 
                                     <tbody>
                                         <c:forEach var="i" items="${ inventories2 }">
-                                        <form class="pure-form" method="post" action="${pageContext.request.contextPath}/mvc/psi/purchase">
+                                        <form class="pure-form" method="post" action="${pageContext.request.contextPath}/demo/purchase">
                                             <tr>
                                                 <td><input type="text" name="pid" value="${ i.id }" readonly style="max-width: 50px" /></td>
                                                 <td>${ i.name }</td>
