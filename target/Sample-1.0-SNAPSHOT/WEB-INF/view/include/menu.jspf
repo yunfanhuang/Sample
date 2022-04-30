@@ -7,16 +7,16 @@
         </a>
         <ul class="pure-menu-list">
             <li>
-                <a href="${pageContext.request.contextPath}/mvc/psi/product" class="pure-menu-link">Product</a>
+                <a href="${pageContext.request.contextPath}/demo/product" class="pure-menu-link">Product</a>
             </li>
             <li>
-                <a href="${pageContext.request.contextPath}/mvc/psi/purchase" class="pure-menu-link">Purchase</a>
+                <a href="${pageContext.request.contextPath}/demo/purchase" class="pure-menu-link">Purchase</a>
             </li>
             <li>
-                <a href="${pageContext.request.contextPath}/mvc/psi/sales" class="pure-menu-link">Sales</a>
+                <a href="${pageContext.request.contextPath}/demo/sales" class="pure-menu-link">Sales</a>
             </li>
             <li>
-                <a href="${pageContext.request.contextPath}/mvc/psi/inventory" class="pure-menu-link">Inventory</a>
+                <a href="${pageContext.request.contextPath}/demo/inventory" class="pure-menu-link">Inventory</a>
             </li>
             <li>
                 <a href="${pageContext.request.contextPath}/mvc/chart/report" class="pure-menu-link">Chart Report</a>
