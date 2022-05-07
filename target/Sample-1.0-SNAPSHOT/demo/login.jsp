@@ -20,9 +20,9 @@
     <center>
         <table bgcolor="#FFFFFF">
             <td>
-                <form class="pure-form" method="post" action="/SpringMVC/mvc/portfolio/login">
+                <form class="pure-form" method="post" action="${pageContext.request.contextPath}/demo/login">
                     <fieldset>
-                        <legend><h1><img src="/SpringMVC/images/user.png" width="40" valign="middle"> Login Form</h1></legend>
+                        <legend><h1><img src="${pageContext.request.contextPath}/images/user.png" width="40" valign="middle"> Login Form</h1></legend>
 
                         <input type="text" name="username" placeholder="Username"><p />
                         <input type="password" name="password" placeholder="Password"><p />
