@@ -16,11 +16,9 @@
                 <a href="${pageContext.request.contextPath}/demo/sales" class="pure-menu-link">Sales</a>
             </li>
             <li>
-                <a href="${pageContext.request.contextPath}/demo/inventory" class="pure-menu-link">Inventory</a>
+                <a href="${pageContext.request.contextPath}/demo/employee" class="pure-menu-link">Employee</a>
             </li>
-            <li>
-                <a href="${pageContext.request.contextPath}/mvc/chart/report" class="pure-menu-link">Chart Report</a>
-            </li>
+            
         </ul>
     </div>
 </div>

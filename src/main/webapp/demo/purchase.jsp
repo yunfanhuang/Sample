@@ -42,7 +42,7 @@
                                     </thead>
 
                                     <tbody>
-                                        <c:forEach var="i" items="${ inventories2 }">
+                                        <c:forEach var="i" items="${ employee }">
                                         <form class="pure-form" method="post" action="${pageContext.request.contextPath}/demo/purchase">
                                             <tr>
                                                 <td><input type="text" name="pid" value="${ i.id }" readonly style="max-width: 50px" /></td>

@@ -53,7 +53,7 @@
                         <form:form class="pure-form"
                                    modelAttribute="product"
                                    method="post"
-                                   action="${pageContext.request.contextPath}/mvc/psi/product">
+                                   action="${pageContext.request.contextPath}/demo/product">
                             <fieldset>
                                 <legend>Product Form</legend>
                                 <form:input path="id" readonly="true" /><p />
