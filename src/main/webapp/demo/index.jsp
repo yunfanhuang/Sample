@@ -1,31 +1,30 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix = "fn" uri = "http://java.sun.com/jsp/jstl/functions" %>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html>
     <head>
-        <!-- Head -->
-        <%@include file="include/header.jspf"  %>
+        <title>我的投資組合</title>
+        <!-- head -->
+        <%@include file="/WEB-INF/jsp/include/head.jspf"  %>
     </head>
-    <body style="padding: 10px">
-
+    <body>
         <div id="layout">
-            <!-- Toggle -->
-            <%@include file="include/toggle.jspf"  %>
+            <!-- Menu toggle -->
+            <%@include file="/WEB-INF/jsp/include/toggle.jspf"  %>
 
             <!-- Menu -->
-            <%@include file="include/menu.jspf"  %>
-
+            <%@include file="/WEB-INF/jsp/include/menu.jspf"  %>
+            
             <div id="main">
                 <div class="header">
-                    <h1>Company</h1>
-                    <h2>CRUD</h2>
+                    <h1>我的投資組合</h1>
+                    <h2>Portfolio Tables</h2>
                 </div>
-                <img width="1200" src="${pageContext.request.contextPath}/image/JPA_CRUD_Lab.png"> 
+                
+                <img src="${pageContext.request.contextPath}/demo/images/portfolio.png" width="100%">
+                
             </div>
         </div>
         <!-- Foot -->
-        <%@include file="include/footer.jspf"  %>
+        <%@include file="/WEB-INF/jsp/include/foot.jspf"  %>   
     </body>
 </html>

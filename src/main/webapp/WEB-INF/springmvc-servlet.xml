@@ -14,6 +14,7 @@
           http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
           
+        
     <context:component-scan base-package="com.web.demo.*"/>
     
     <!-- 自定converter與formatter -->
@@ -28,7 +29,7 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
 		<!--數據庫訪問地址 -->
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demo"></property>
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"></property>
 		<!--數據庫訪問用戶名 -->
 		<property name="username" value="test"></property>
 		<!--數據庫訪問密碼 -->

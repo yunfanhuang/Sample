@@ -1,0 +1,18 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="menu">
+    <div class="pure-menu">
+        <a class="pure-menu-heading" href="${pageContext.request.contextPath}/demo/index.jsp">${sessionScope.investor.username}</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/investor.jsp" class="pure-menu-link">Investor</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/classify.jsp" class="pure-menu-link">Classify</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/tstock.jsp" class="pure-menu-link">TStock</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/watch.jsp" class="pure-menu-link">Watch</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/watchlist.jsp" class="pure-menu-link">Watch List</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/asset.jsp" class="pure-menu-link">Asset</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/logout" class="pure-menu-link">Logout</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/price/refresh" class="pure-menu-link">Refresh Price</a></li>
+            <li class="pure-menu-item"><a href="${pageContext.request.contextPath}/demo/price/histquotes/^TWII" class="pure-menu-link">History Price</a></li>
+        </ul>
+    </div>
+</div>
